@@ -23,8 +23,6 @@ pub fn grapscale(encoded_file: &str, filter: &str, slider_int: i32, slider_float
         _ => img = img
     };
 
-    
-
     let mut buffer = Cursor::new(vec![]);
     img.write_to(&mut buffer, Png).unwrap();
 
