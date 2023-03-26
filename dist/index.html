@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><style>body {
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .title{
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        input[type="file"], select, input[type="submit"], button {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #363636;
+            cursor: pointer;
+        }
+        input[type="range"] {
+            margin: 10px;
+            width: 80%;
+            cursor: pointer;
+        }
+        #image {
+            width: 400px;
+            margin-top: 18px;
+        }</style><script defer="defer" src="bundle.js"></script></head><body><div class="main"><div><div class="title"><p>RUST WebAssembly - Simple Photo Editor</p><a href="#">Github</a></div><input type="file" name="test" id="upload"><div><select id="select"><option value="rotate">Color Rotate</option><option value="contrast">Contrast</option><option value="brightness">Brightness</option><option value="gray">Gray</option><option value="blur">Blur</option></select> <input type="range" min="1" max="360" value="60" class="slider" id="range"></div><input type="submit" value="Submit" id="submit"></div><div class="result"><img id="image"></div></div><script src="main.js"></script></body></html>
